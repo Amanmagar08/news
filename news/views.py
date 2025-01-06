@@ -1,10 +1,12 @@
 from django.shortcuts import render
+from .models import news, Category
 
 # Create your views here.
 def home(request):
     dict = {
-          'name' : 'item',
-          'price': '$999'
+          'name' : news.objects.all(),
+          'price': 999,
+          'address' : 'Chabahil'
         }
 
     return render(request, "index.html", dict)
