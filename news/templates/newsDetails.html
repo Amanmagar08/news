@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+        <h1>News Details</h1>
+        <hr>
+        <h4 class="bg-warning">
+                {{data.title}}
+        </h4>
+        <span class="badge bg-danger">{{data.category}}</span>
+        <hr>
+        <p>{{data.description}}</p>
+        <hr>
+        <p>
+            Published Date: {{data.created_at}}
+        </p>
+{% endblock content %}
+
