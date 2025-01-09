@@ -8,7 +8,6 @@ def home(request):
           'price': 999,
           'address' : 'Chicago'
         }
-
     return render(request, "index.html", dict)
 
 
@@ -19,4 +18,10 @@ def about(request):
 def newsDetails(request, id):
     print(id)
     data = news.objects.get(id = id)
-    return render(request, "newsDetails.html", {'data':data})
+    print(data)
+    diust ={
+        'datas':data,
+        'name':"hreyygtgtttftftftf"
+    }
+
+    return render(request, "newsDetails.html",diust )

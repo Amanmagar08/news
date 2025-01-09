@@ -3,16 +3,21 @@
 
 {% block content %}
         <h1>News Details</h1>
+        {{diust }}
+        {{datas}}
+        {{name}}
         <hr>
         <h4 class="bg-warning">
-                {{data.title}}
+                {{datas.title}}
         </h4>
-        <span class="badge bg-danger">{{data.category}}</span>
-        <hr>
-        <p>{{data.description}}</p>
+        <span class="badge bg-danger">{{datas.category}}</span>
         <hr>
         <p>
-            Published Date: {{data.created_at}}
+                {{datas.description}}
+        </p>
+        <hr>
+        <p>
+            Published Date: {{datas.created_at}}
         </p>
 {% endblock content %}
 
