@@ -37,7 +37,7 @@
       </nav>
 {% block content %}
 <h1>Our News</h1>
-{% for i in name%}
+{% for i in name %}
 <a href="{%url 'news:newsDetails' i.id%}">
   <h1 class="bg-primary p-2 m-2 text-light">{{i}}
     <br>

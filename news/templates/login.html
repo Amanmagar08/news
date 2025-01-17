@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<h1> Login <h1>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-12 text-center">
+                <div class="card">
+                    <form action="" method="post">
+                        <img src="{% static 'login.avif' %}" alt="...">
+                        <input type="text" class="form-control" name="email" placeholder = "Email or username">
+                        <input class="form-control" type="password" name="password" id="" placeholder="password">
+                        {% csrf_token %}
+                        <button class="btn btn-primary"> Login </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

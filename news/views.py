@@ -14,6 +14,8 @@ def home(request):
 def about(request):
     return render(request,'about.html')
 
+def loginPage(request):
+    return render(request,'login.html')
 
 def newsDetails(request, id):
     print(id)
